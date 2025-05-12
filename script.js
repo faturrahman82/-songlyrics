@@ -19,13 +19,14 @@ audio.addEventListener('error', () => {
 
 // Set total duration when audio metadata is loaded
 audio.addEventListener('loadedmetadata', () => {
-    totalTimeLabel.textContent = formatTime(Math.floor(audio.duration));
+    const duration = Math.floor(audio.duration);
+    totalTimeLabel.textContent = formatTime(duration);
 });
 
 // Format time in MM:SS
 function formatTime(time) {
     const minutes = Math.floor(time / 60);
-    const seconds = time % 60;
+    const seconds = Math.floor(time % 60); // Tambahkan Math.floor disini
     return `${minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
 }
 
