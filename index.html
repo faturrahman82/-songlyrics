@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player - Our Story</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="music-card">
+      <h1>Tersimpan</h1>
+      <h2>Our Story</h2>
+      <div class="progress-container">
+        <span id="current-time">0:00</span>
+        <input type="range" id="progress-bar" value="0" max="100" />
+        <span id="total-time">0:00</span>
+      </div>
+      <div class="controls">
+        <button class="icon" id="like-btn">♡</button>
+        <button id="play-pause-btn" class="play">▶</button>
+        <button class="icon">♫</button>
+      </div>
+      <div class="lyrics-container">
+        <h3 id="current-lyric">Our Story</h3>
+      </div>
+      <audio id="audio" preload="auto" src="OUR STORY - Tersimpan (Official Lyric Video) (mp3cut.net).mp3"></audio>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

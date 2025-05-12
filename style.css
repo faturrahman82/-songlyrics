@@ -1,0 +1,120 @@
+/* Base styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1A1B25; /* Biru sangat gelap dengan hint ungu */
+    font-family: Arial, sans-serif;
+}
+
+/* Music card container */
+.music-card {
+    background-color: #2D2B3D; /* Ungu gelap */
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 350px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Typography */
+h1, h2, h3 {
+    margin: 0;
+    color: #E2E8F0; /* Abu-abu terang dengan hint ungu */
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+/* Progress bar container */
+.progress-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    color: #E2E8F0;
+}
+
+#progress-bar {
+    width: 85%;
+    margin: 0 10px;
+    accent-color: #9F7AEA; /* Ungu lembut */
+}
+
+/* Controls section */
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+/* Buttons */
+button {
+    border: none;
+    cursor: pointer;
+}
+
+/* Icon buttons */
+.icon {
+    background: none;
+    color: #9F7AEA; /* Ungu lembut */
+    font-size: 1.8em;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon.liked {
+    color: #B794F4; /* Ungu cerah */
+    text-shadow: 0 0 5px rgba(183, 148, 244, 0.5);
+}
+
+/* Play/Pause button */
+#play-pause-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #805AD5;
+    color: white;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    line-height: 0;
+    transition: background-color 0.3s ease;
+}
+
+#play-pause-btn:hover {
+    background-color: #6B46C1;
+}
+
+.lyrics-container {
+    margin: 20px 0;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#current-lyric {
+    transition: opacity 0.3s ease;
+    opacity: 1;
+}
+
+#current-lyric.fade {
+    opacity: 0;
+}
